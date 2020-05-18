@@ -12,7 +12,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define TAMN 3
+#define TAMN 4
 
 typedef struct{
 	int id;
@@ -33,9 +33,10 @@ int main(void) {
 	char nombre[20];
 	int cantidadCaracter;
 	eNotebook listaN[TAMN] = {
-			{1000, "AMD ryzen", "HP", 60000},
-			{1001, "intel", "Compaq", 30000},
-			{1002, "intel pentium", "Lenovo", 70000} };
+			{1000, "AMD ryzen", "HP", 25000},
+			{1001, "intel", "Compaq", 40000},
+			{1002, "intel", "Compaq", 30000},
+			{1003, "intel pentium", "Lenovo", 70000} };
 
 	//Llamada a funciones:
 	//1
@@ -52,6 +53,7 @@ int main(void) {
 	//2
 	printf("Cantidad caracter %d\n\n", cantidadCaracter);
 	//3
+	printf("ID       Procesador        Marca      Precio\n\n");
 	for(int i = 0; i <TAMN; i++)
 	{
 		printf("%d    %10s    %10s   $ %.2f\n", listaN[i].id, listaN[i].procesador, listaN[i].marca, listaN[i].precio);
