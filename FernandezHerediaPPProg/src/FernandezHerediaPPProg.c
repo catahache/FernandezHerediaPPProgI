@@ -102,7 +102,7 @@ void ordenarPorMarcayPrecio(eNotebook notebooks[], int tamN)
 				notebooks[i] = notebooks[j];
 				notebooks[j] = auxN;
 			}
-			else if(strcmp(notebooks[i].marca, notebooks[j].marca) == 0 && notebooks[i].precio < notebooks[j].precio) //de menor a mayor precio
+			else if(strcmp(notebooks[i].marca, notebooks[j].marca) == 0 && notebooks[i].precio < notebooks[j].precio) //de mayor a menor precio
 			{
 				auxN = notebooks[i];
 				notebooks[i] = notebooks[j];
